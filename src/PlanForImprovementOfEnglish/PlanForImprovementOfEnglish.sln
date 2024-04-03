@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanForImprovementOfEnglish", "PlanForImprovementOfEnglish.csproj", "{163DF003-4FE7-4D23-9694-FA79C0AE9A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanForImprovementEnglishConverter", "..\PlanForImprovementEnglishConverter\PlanForImprovementEnglishConverter.csproj", "{448FC021-3BC5-423E-BF96-B7A5BB5866FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163DF003-4FE7-4D23-9694-FA79C0AE9A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163DF003-4FE7-4D23-9694-FA79C0AE9A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163DF003-4FE7-4D23-9694-FA79C0AE9A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163DF003-4FE7-4D23-9694-FA79C0AE9A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448FC021-3BC5-423E-BF96-B7A5BB5866FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448FC021-3BC5-423E-BF96-B7A5BB5866FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448FC021-3BC5-423E-BF96-B7A5BB5866FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448FC021-3BC5-423E-BF96-B7A5BB5866FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F53AE7E9-0FD6-4790-9DCA-3FF403C4F8D0}
+	EndGlobalSection
+EndGlobal
