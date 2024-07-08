@@ -4,19 +4,16 @@ namespace PlanForImprovementEnglishConverter
 {
     public class YearOneConverterStrategy : ITextConverterStrategy
     {
-        const string _blurb = "For example, in Year 1 that useless letter \"c\" would be dropped to be replased either by \"k\" or \"s\", and likewise \"x\" would no longer be part of the alphabet.";
-        const string _description = "Replace \"C\" with \"K\" or \"S\" and \"X\" with \"KS\"";
-
-        const string _vowels = "aeiouAEIOU";
+        private const string _vowels = "aeiouAEIOU";
         public string Convert(string input)
         {
             var result = ReplaceCwithS(input);
             result = ReplaceCwithK(result);
             
-            return ReplaceXwithKs(result); ;
+            return ReplaceXwithKs(result);
         }
 
-        private string ReplaceXwithKs(string input)
+        private static string ReplaceXwithKs(string input)
         {
             return input.Replace("x", "ks");
         }
@@ -28,7 +25,7 @@ namespace PlanForImprovementEnglishConverter
                 .Replace("cy", "sy");
         }
 
-        private string ReplaceCwithS(string input)
+        private static string ReplaceCwithS(string input)
         {
             var result = input.Replace("ca", "ka")
                 .Replace("co", "ko")
@@ -52,24 +49,13 @@ namespace PlanForImprovementEnglishConverter
                 
         }
 
-        private bool IsConsonant(char v)
+        private static bool IsConsonant(char v)
         {
             return _vowels.IndexOf(v) >= 0;
         }
 
-        public string Blurb { 
-            get
-            {
-                return _blurb;
-            }
-        }
+        public string Blurb => "For example, in Year 1 that useless letter \"c\" would be dropped to be replased either by \"k\" or \"s\", and likewise \"x\" would no longer be part of the alphabet.";
 
-        public string Description
-        {
-            get
-            {
-                return _description;
-            }
-        }
+        public string Description => "Replace \"C\" with \"K\" or \"S\" and \"X\" with \"KS\"";
     }
 }
